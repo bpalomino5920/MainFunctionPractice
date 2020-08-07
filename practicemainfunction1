@@ -1,0 +1,21 @@
+def string_lengths(string_list):
+    # Create a new list that contains the
+    # lengths of the strings in the argument
+    # list or an empty list if the argument list
+    # is empty. Output the original list and the
+    # length list.
+    string1 = string_list
+    string1 = string1.split()
+    my_list1 = []
+    for index in string1:
+        my_list1.append(len(index))
+    print(string_list.split())
+    print(my_list1)
+    
+def main(): 
+    # Input a list of words, output them as a
+    # list, and output a list that contains
+    # their lengths  
+    string_list = input('Enter some words >')
+    string_lengths(string_list)
+main()
